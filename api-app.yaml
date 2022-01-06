@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api-app
-        image: takum1yamada / epoch-sample-app-api:main.20211220-120442
+        image: takum1yamada/epoch-sample-app-api:main.20220105-171137
         ports:
         - name: http
           containerPort: 8000
@@ -47,7 +47,7 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: 31001
+    nodePort: 31002
   selector:
     name: api-app
 
@@ -65,6 +65,6 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: 32001
+    nodePort: 32002
   selector:
     name: api-app
